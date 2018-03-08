@@ -15,7 +15,7 @@ for channel_id in range(1, 1+n_channels):
     script_path_with_args = "".join([
         "matlab -nosplash -nodesktop -nodisplay -r ",
         "\"",
-        "channel_id = " + channel_str + "; ",
+        "channel_id = " + str(channel_id).zfill(2) + "; ",
         call_str,
         "\""])
 
