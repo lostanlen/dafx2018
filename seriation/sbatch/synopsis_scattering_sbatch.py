@@ -34,7 +34,7 @@ for channel_id in range(1, 1+n_channels):
         f.write("#SBATCH --cpus-per-task=1\n")
         f.write("#SBATCH --time=01:00:00\n")
         f.write("#SBATCH --mem=8GB\n")
-        f.write("#SBATCH --output=" + slurm_name + "\n")
+        f.write("#SBATCH --output=" + slurm_path + "\n")
         f.write("\n")
         f.write("module purge\n")
         f.write("module load matlab/2017a\n")
