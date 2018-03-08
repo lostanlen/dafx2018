@@ -52,4 +52,4 @@ with open(shell_path, "w") as f:
 
     for channel_id in range(1, 1+n_channels):
         job_name = "synopsis_scattering_ch-" + str(channel_id).zfill(2)
-        f.write("sbatch " + file_name + ".sbatch\n")
+        f.write("sbatch " + job_name + ".sbatch\n")
