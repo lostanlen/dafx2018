@@ -8,10 +8,6 @@ script_path = os.path.join("..", script_name)
 call_str = "run(\'" + script_name + "\');"
 
 
-channel_str = str(channel_id).zfill(2)
-file_name = job_name + ".sbatch"
-file_path = os.path.join(sbatch_dir, file_name)
-
 # Loop over synopsis channels.
 n_channels = 12
 for channel_id in range(1, 1+n_channels):
