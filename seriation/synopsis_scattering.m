@@ -1,7 +1,6 @@
 addpath(genpath('~/scattering.m'));
 Q1 = 12;
 N = 2^17;
-fs = 48000;
 
 
 %% Load and pad signal.
