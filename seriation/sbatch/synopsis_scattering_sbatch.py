@@ -39,7 +39,7 @@ for channel_id in range(1, 1+n_channels):
         f.write("module purge\n")
         f.write("module load matlab/2017a\n")
         f.write("\n")
-        f.write("python " + script_path_with_args)
+        f.write(script_path_with_args)
 
 
 # Create shell file to launch sbatch files.
