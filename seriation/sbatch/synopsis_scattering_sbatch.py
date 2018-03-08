@@ -46,8 +46,8 @@ for channel_id in range(1, 1+n_channels):
 shell_path = "synopsis_scattering.sh"
 with open(shell_path, "w") as f:
     # Print header
-    f.write(["# This shell script executes all Slurm jobs ",
-        "for scattering transforms.\n"])
+    f.write("# This shell script executes all Slurm jobs " +\
+        "for scattering transforms.\n")
     f.write("\n")
 
     for channel_id in range(1, 1+n_channels):
