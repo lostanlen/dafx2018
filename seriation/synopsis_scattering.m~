@@ -90,9 +90,10 @@ for hop_id = 0:(n_hops-1)
 end
 
 
-%% Save scattering transform at MAT file.
-scattering_dir = '/scratch/vl1019/dafx2018_data/scattering_transforms/';
-scattering_name = ['Synopsis_scattering_ch-', ...
-    sprintf('%0.2d', channel_id), '.mat'];
-scattering_path = [scattering_dir, scattering_name];
-save(scattering_path, 'X', '-7.3');
+%%
+scattering_dir = '/scratch/vl1019/dafx2018_data/scattering_transforms';
+scatterin_name = [ ...
+    'Synopsis_scattering_ch-', ...
+    sprintf('%0.2d', channel_id), ...
+    '.];
+%save([)
