@@ -2,6 +2,7 @@ import numpy as np
 import os
 import sys
 
+# Define job name.
 script_name = "synopsis_scattering.m"
 script_path = os.path.join("..", script_name)
 call_str = "run(\'" + script_name + "\');"
@@ -9,7 +10,6 @@ call_str = "run(\'" + script_name + "\');"
 os.makedirs("sbatch", exist_ok=True)
 os.makedirs("slurm", exist_ok=True)
 
-# Define job name.
 channel_str = str(channel_id).zfill(2)
 file_name = job_name + ".sbatch"
 file_path = os.path.join(sbatch_dir, file_name)
