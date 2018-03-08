@@ -21,6 +21,7 @@ for channel_id in range(1, 1+n_channels):
 
     # Define slurm name.
     job_name = "synopsis_scattering_ch-" + str(channel_id).zfill(2)
+    file_path = job_name + ".sbatch"
     slurm_path = job_name + "_%j.out"
 
     # Write call to python in SBATCH file.
