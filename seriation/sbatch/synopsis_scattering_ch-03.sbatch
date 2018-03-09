@@ -11,4 +11,4 @@
 module purge
 module load matlab/2017a
 
-python matlab -nosplash -nodesktop -nodisplay -r "channel_id = 03; run('synopsis_scattering.m');"
+matlab -nosplash -nodesktop -nodisplay -r "channel_id = 03; run('synopsis_scattering.m');"
