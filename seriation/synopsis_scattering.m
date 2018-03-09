@@ -62,7 +62,7 @@ x_windowed_filtered = filtfilt(d, x_windowed);
 
 % Format scattering transform.
 Sf = sc_format(S);
-n_features = size(S, 1);
+n_features = size(Sf, 1);
 
 % Initialize matrix.
 X = zeros(n_features, n_hops);
