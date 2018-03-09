@@ -4,7 +4,7 @@ N = 2^17;
 
 
 %% Load and pad signal.
-[y, fs] = audioread(['~/dafx2018/data/original_waveforms/', ...
+[y, fs] = audioread(['/scratch/vl1019/dafx2018_data/original_waveforms/', ...
     'Synopsis_Seriation_dataset_Synopsis_Seriation_', ...
     int2str(channel_id), '.wav']);
 
@@ -72,18 +72,18 @@ for hop_id = 0:(n_hops-1)
     hop_start = 1 + hop_id * hop_length;
     hop_stop = hop_start + N - 1;
     x = padded_y(hop_start:hop_stop);
-    
+
     % Window.
     x_windowed = x .* hamming_window;
     x_windowed_filtered = filtfilt(d, x_windowed);
-    
+
     % Compute scattering transform.
     [S, U] = sc_propagate(x_windowed_filtered, archs);
 
     % Format scattering transform.
     Sf = sc_format(S);
     Sf = Sf(:, 2);
-    
+
     % Store as a column in X.
     X(:, 1+hop_id) = Sf;
 end
