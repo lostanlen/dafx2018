@@ -94,4 +94,4 @@ scattering_dir = '/scratch/vl1019/dafx2018_data/scattering_transforms/';
 scattering_name = ['Synopsis_scattering_ch-', ...
     sprintf('%0.2d', channel_id), '.mat'];
 scattering_path = [scattering_dir, scattering_name];
-save(scattering_path, 'X', '-7.3');
+save(scattering_path, 'X', '-v7.3');
