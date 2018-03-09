@@ -3,7 +3,7 @@ import os
 import sys
 
 # Define job name.
-script_name = "synopsis_scattering.m"
+script_name = "../synopsis_scattering.m"
 script_path = os.path.join("..", script_name)
 call_str = "run(\'" + script_name + "\');"
 
